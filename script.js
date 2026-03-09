@@ -103,3 +103,4 @@ li.textContent = time
 document.getElementById("historyList").appendChild(li)
 
 }
+
