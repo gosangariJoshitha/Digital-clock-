@@ -1,0 +1,100 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#1f1c2c,#928dab);
+color:white;
+}
+
+.container{
+width:420px;
+padding:30px;
+text-align:center;
+border-radius:12px;
+background:rgba(255,255,255,0.08);
+}
+
+/* Title */
+h1{
+margin-bottom:20px;
+}
+
+/* Clock and Stopwatch Boxes */
+.clock-box,
+.stopwatch-box{
+margin-top:20px;
+padding:15px;
+border:1px solid rgba(255,255,255,0.3);
+border-radius:8px;
+}
+
+/* Time Display */
+#digitalClock,
+#stopwatch{
+font-size:32px;
+margin-top:8px;
+}
+
+/* Buttons */
+.buttons{
+margin-top:15px;
+}
+
+button{
+padding:8px 16px;
+margin:5px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:nth-child(1){
+background:#00c853;
+color:white;
+}
+
+button:nth-child(2){
+background:#ff5252;
+color:white;
+}
+
+button:nth-child(3){
+background:#ffd600;
+color:black;
+}
+
+/* History */
+.history{
+margin-top:20px;
+}
+
+#historyList{
+list-style:none;
+max-height:120px;
+overflow-y:auto;
+}
+
+#historyList li{
+padding:5px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+/* Responsive */
+@media(max-width:500px){
+.container{
+width:90%;
+}
+
+#digitalClock,
+#stopwatch{
+font-size:26px;
+}
+}
